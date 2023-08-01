@@ -1,0 +1,76 @@
+.handWithPhone {
+    background: url('./../img/section_hand_with_phone/full_bg.png') center center / cover no-repeat;
+    height: 1511px;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        position: absolute;
+        bottom: 301px;
+        width: 1302px;
+        justify-content: space-between;
+        transform: translate(0, 100%);
+
+        &__text-1 {
+            width: 365px;
+            height: 151px;
+            padding-top: 53px;
+            position: relative;
+        }
+
+        &__text-1 h2 {
+            color: $white;
+            font-size: 40px;
+            font-weight: $gotham-pro-black;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #83BF0E;
+                width: 72px;
+                height: 6px;
+                top: 0;
+                left: 0;
+                border-radius: 100px;
+            }
+        }
+
+        &__text-2 div {
+            width: 465px;
+        }
+
+        &__text-2 div div {
+            height: 61px;
+            border: dashed #83BF0E;
+            border-radius: 10px;
+            text-align: center;
+            position: relative
+        }
+
+        &__text-2 div div p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__text-2__subtext-1 {
+            font-size: 28px;
+            color: $white;
+            font-weight: $gotham-pro-medium;
+            margin-bottom: 35px;
+        }
+
+        &__text-2__subtext-2 {
+            font-size: 28px;
+            color: $white;
+            font-weight: $gotham-pro-medium;
+            margin-bottom: 35px;
+        }
+    }
+
+
+}

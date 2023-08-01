@@ -1,0 +1,45 @@
+@import url(./../fonts/GothamProBlack/style.css);
+@import url(./../fonts/GothamProBold/style.css);
+@import url(./../fonts/GothamProMedium/style.css);
+@import url(./../fonts/GothamProRegular/style.css);
+
+body {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    background-color: $bg-color;
+    color: $black;
+    font-size: 25px;
+}
+
+a {
+    color: $link;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $active;
+    }
+}
+
+hr {
+    min-height: 1px;
+    background-color: #F0F0F0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1302px;
+}
+
+.logo img {
+    width: 61.94px;
+    height: 54px;
+}
+
+.active {
+    color: $active;
+}
+
+.headerPlace {
+    height: 94px;
+}

@@ -1,0 +1,173 @@
+.chatBot {
+    background-color: $accent;
+    // height: 1900px;
+    padding-top: 69px;
+    padding-bottom: 181.70px;
+
+    &__wrapper {
+        height: 790px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 87px;
+
+        &__textWrap {
+            width: 478px;
+            // height: 462px;
+
+            &-title {
+                font-size: 40px;
+                color: $white;
+                & span {
+                    color: #83AD32;
+                }
+                font-weight: $gotham-pro-black;
+                margin-bottom: 40px;
+            }
+
+            &-text {
+                color: $white;
+                font-weight: $gotham-pro-regular;
+                margin-bottom: 40px;
+            }
+
+            &-lists {
+                line-height: 65px;
+
+                & li {
+                    font-size: 20px;
+                    color: $white;
+                    font-weight: $gotham-pro-medium;
+                    padding-left: 77px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                & .item-1 {
+                    &::before {
+                        background: url('./../img/chatBot/icons/personal_data.svg') center center / cover no-repeat;
+                    }
+                }
+
+                & .item-2 {
+                    &::before {
+                        background: url('./../img/chatBot/icons/registration.svg') center center / cover no-repeat;
+                    }
+                }
+
+                & .item-3 {
+                    &::before {
+                        background: url('./../img/chatBot/icons/surveys.svg') center center / cover no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    &__wrapper2 {
+        height: 772.25px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before {
+            content: '';
+            width: 457.57px;
+            height: 261px;
+            position: absolute;
+            top: 0;
+            left: 56.88px;
+            background: url('./../img/chatBot/types_of_questions/bg_img.svg') center center / cover no-repeat;
+        }
+
+        &__textWrap {
+            width: 459px;
+            // height: 530px;
+            position: relative;
+            padding-top: 37px;
+
+            &::before {
+                content: '';
+                height: 6px;
+                width: 88px;
+                background-color: #83BF0E;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &-title {
+                font-size: 40px;
+                color: $white;
+                font-weight: $gotham-pro-black;
+                margin-bottom: 31px;
+            }
+
+            &-lists {
+                // line-height: 61px;
+                margin-bottom: 31px;
+
+                & div {
+                    color: $white;
+                    font-weight: $gotham-pro-regular;
+                    line-height: 40px;
+                    padding-left: 37px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 6.5px;
+                        height: 6.5px;
+                        background-color: $white;
+                        border-radius: 100%;
+                        position: absolute;
+                        top: 16.5px;
+                        left: 15.5px;
+                    }
+                }
+
+                & .item-1 {
+                    margin-bottom: 24px;
+                }
+            }
+
+            &-subtitle {
+                width: 319px;
+                height: 61px;
+                border: 3px dashed #83BF0E;
+                border-radius: 10px;
+                text-align: center;
+                position: relative;
+
+                & h3 {
+                    width: 100%;
+                    font-size: 22px;
+                    color: $white;
+                    font-weight: $gotham-pro-bold;
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        &__imgWrap {
+            width: 705px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

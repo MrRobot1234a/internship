@@ -1,0 +1,44 @@
+.header {
+    min-height: 130px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: $bg-color;
+    &__top {
+        display: flex;
+        min-height: 85px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &-btn {
+            width: 260px;
+            height: 54px;
+            font-size: 16px;
+            font-weight: $gotham-pro-medium;
+            background-color: #F86161;
+            border-radius: 50px;
+            color: $white;
+            text-align: center;
+        }
+
+        &-hamburg {
+            width: 42px;
+            height: 16px;
+        }
+
+        &-wrapper {
+            width: 332px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__bottom {
+        min-height: 45px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

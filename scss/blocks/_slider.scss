@@ -1,0 +1,97 @@
+.slider {
+    background: url('./../img/slider/slider_bg.png') center center / cover no-repeat;
+    height: 1814px;
+    padding-top: 109px;
+    padding-bottom: 96px;
+
+    &__title {
+        width: 517px;
+        margin: 0 auto;
+        font-size: 40px;
+        color: #363B46;
+        font-weight: $gotham-pro-black;
+        text-align: center;
+        margin-bottom: 54px;
+    }
+
+    &__functions {
+        width: 796px;
+        height: 544px;
+        position: relative;
+        padding-top: 35px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #83BF0E;
+            width: 72px;
+            height: 6px;
+            top: 0;
+            left: 0;
+            border-radius: 100px;
+        }
+
+        &-title {
+            font-size: 40px;
+            color: #363B46;
+            font-weight: $gotham-pro-black;
+            margin-bottom: 40px;
+        }
+
+        &-lists {
+            line-height: 80px;
+
+            & li {
+                font-weight: $gotham-pro-regular;
+                position: relative;
+                padding-left: 106px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 66px;
+                    height: 66px;
+                    top: 50%;
+                    left: 35px;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            & .item-1 {
+
+                &::before {
+                    background: url('./../img/slider/functional/pen.svg') center center / cover no-repeat;
+                }
+            }
+
+            & .item-2 {
+
+                &::before {
+                    background: url('./../img/slider/functional/grid.svg') center center / cover no-repeat;
+                }
+            }
+
+            & .item-3 {
+
+                &::before {
+                    background: url('./../img/slider/functional/circle.svg') center center / cover no-repeat;
+                }
+            }
+
+            & .item-4 {
+
+                &::before {
+                    background: url('./../img/slider/functional/books.svg') center center / cover no-repeat;
+                }
+            }
+
+            & .item-5 {
+
+                &::before {
+                    background: url('./../img/slider/functional/dynamic.svg') center center / cover no-repeat;
+                }
+            }
+        }
+    }
+}
